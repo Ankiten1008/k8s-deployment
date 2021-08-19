@@ -4,7 +4,7 @@
 
 postgres:
   deploymentName: postgres-deploy
-  appName: postgres-poc
+  appName: demo-voting-app
   postgresPodName: postgres-pod
   podImage: postgres
   postgresPort: 5432
