@@ -13,7 +13,7 @@ postgres:
 service:
   serviceName: db
   serviceLabelName: postgres-svc
-  type: LoadBalancer
+  type: NodePort
   nodePort: 30006
 
 replicaCount: 4
