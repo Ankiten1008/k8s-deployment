@@ -13,7 +13,7 @@ postgres:
 
 service:
   serviceName: db
-  serviceLabelName: postgres-service
+  serviceLabelName: postgres-svc
   type: LoadBalancer
   nodePort: 30006
 
