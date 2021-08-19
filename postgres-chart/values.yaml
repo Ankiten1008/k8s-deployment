@@ -3,13 +3,13 @@
 # Declare variables to be passed into your templates.
 
 postgres:
-  deploymentName: postgres-deployment
+  deploymentName: postgres-deploy
   appName: demo-voting-app
   postgresPodName: postgres-pod
   podImage: postgres
   postgresPort: 5432
   postgresUser: "postgres"
-  postgresPswd: "password"
+  postgresPswd: "postgres"
 
 service:
   serviceName: db
