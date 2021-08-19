@@ -4,20 +4,20 @@ metadata:
   name: {{ .Values.postgres.deploymentName }}
   labels:
     name: {{ .Values.postgres.deploymentName }}
-    app: {{ .Values.postgres.appName }}
+    app: demo-casestudy
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       name: {{ .Values.postgres.postgresPodName }}
-      app: {{ .Values.postgres.appName }}
+      app: demo-casestudy
     
   template:
     metadata:
       name: {{ .Values.postgres.postgresPodName }}
       labels:
         name: {{ .Values.postgres.postgresPodName }}
-        app: {{ .Values.postgres.appName }}
+        app: demo-casestudy
     spec:
       containers:
         - name: postgres

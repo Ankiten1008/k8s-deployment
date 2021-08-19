@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.service.serviceName }}
   labels:
     name: {{ .Values.service.serviceLabelName }}
-    app: {{ .Values.postgres.appName }}
+    app: demo-casestudy
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -13,4 +13,4 @@ spec:
       nodePort: {{ .Values.service.nodePort }}
   selector:
     name: {{ .Values.postgres.postgresPodName }}
-    app: {{ .Values.postgres.appName }}
+    app: demo-casestudy
