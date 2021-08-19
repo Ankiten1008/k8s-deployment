@@ -16,4 +16,4 @@ service:
   type: LoadBalancer
   nodePort: 30006
 
-replicaCount: 2
+replicaCount: 3
