@@ -1,0 +1,20 @@
+# Default values for postgres-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+postgres:
+  deploymentName: postgres-deploy
+  appName: demo-voting-app
+  postgresPodName: postgres-pod
+  podImage: postgres
+  postgresPort: 5432
+  postgresUser: "postgres"
+  postgresPswd: "postgres"
+
+service:
+  serviceName: db
+  serviceLabelName: postgres-service
+  type: NodePort
+  nodePort: 30006
+
+replicaCount: 4
