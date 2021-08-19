@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 postgres:
-  deploymentName: postgres-deploy
+  deploymentName: postgres-deployment
   appName: demo-voting-app
   postgresPodName: postgres-pod
   podImage: postgres
