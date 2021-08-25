@@ -16,4 +16,4 @@ service:
   type: NodePort
   nodePort: 30006
 
-replicaCount: 4
+replicaCount: 3
